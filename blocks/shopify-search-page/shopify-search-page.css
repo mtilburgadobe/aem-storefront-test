@@ -1,0 +1,61 @@
+.shopify-search-page {
+  padding: 33.6px var(--shopify-margin);
+}
+
+.shopify-search-page > h3 {
+  font-size: 36px;
+  margin-bottom: 24px;
+}
+
+.shopify-search-page form {
+  position: relative;
+  max-width: 680px;
+  margin-bottom: 48px;
+}
+
+.shopify-search-page input {
+  width: 100%;
+  padding: 16px 54px;
+  border: 1px solid rgb(223 223 223);
+  border-radius: 4px;
+}
+
+.shopify-search-page form button {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0;
+  background: none;
+  padding: 0;
+}
+
+.shopify-search-page form button svg {
+  width: 20px;
+  height: 20px;
+}
+
+.shopify-search-page > h4 {
+  font-size: 24px;
+  line-height: 1;
+  margin: 0 0 32px;
+}
+
+@media (min-width: 750px) {
+  .shopify-search-page {
+  padding-block: 40px 60px;
+}
+}
+
+@media (min-width: 750px) {
+  .shopify-search-page > h3 {
+  font-size: 48px;
+}
+}
+
+@media (min-width: 750px) {
+  .shopify-search-page .shopify-grid {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 16px;
+}
+}

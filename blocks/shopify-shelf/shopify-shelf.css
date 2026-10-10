@@ -1,0 +1,42 @@
+.shopify-shelf {
+  padding: 33.6px var(--shopify-margin);
+}
+
+.shopify-shelf h3 {
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.shopify-shelf.shopify-recommendations .shopify-grid {
+  gap: 12px;
+}
+
+.shopify-shelf.shopify-recommendations .shopify-card {
+  padding-bottom: 8px;
+}
+
+.shopify-shelf.shopify-recommendations .shopify-card-title {
+  margin-top: 12px;
+}
+
+.shopify-shelf.shopify-recommendations .shopify-card-price {
+  margin-top: 4px;
+}
+
+@media (min-width: 750px) {
+  .shopify-shelf {
+  padding-block: 48px;
+}
+}
+
+@media (min-width: 750px) {
+  .shopify-shelf h3 {
+  margin-bottom: 28px;
+}
+}
+
+@media (min-width: 750px) {
+  .shopify-shelf.shopify-recommendations .shopify-grid {
+  gap: 24px 12px;
+}
+}

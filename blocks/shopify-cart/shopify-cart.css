@@ -1,0 +1,51 @@
+.shopify-cart .shopify-cart-empty {
+  text-align: center;
+  padding: 100px 16px 80px;
+}
+
+.shopify-cart h1 {
+  font-size: 24px;
+}
+
+.shopify-cart .shopify-cart-empty p {
+  margin: 18.4px auto 26.8px;
+  max-width: 512px;
+}
+
+.shopify-cart .shopify-cart-empty .shopify-button {
+  padding-inline: 32px;
+}
+
+.shopify-cart .shopify-cart-empty p a {
+  text-decoration: underline;
+}
+
+.shopify-cart .shopify-cart-lines {
+  padding: 48px var(--shopify-margin);
+}
+
+.shopify-cart .shopify-cart-line {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  border-bottom: 1px solid rgb(221 221 221);
+  padding: 20px 0;
+}
+
+.shopify-cart .shopify-cart-line img {
+  width: 80px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.shopify-cart .shopify-cart-line button {
+  background: rgb(255 255 255);
+  border: 1px solid rgb(221 221 221);
+  padding: 8px;
+}
+
+@media (min-width: 750px) {
+  .shopify-cart .shopify-cart-empty {
+  padding-top: 104px;
+}
+}

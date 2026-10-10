@@ -1,0 +1,60 @@
+.shopify-storefront .content-for-layout:has(> .shopify-policy) {
+  display: flex;
+}
+
+.shopify-policy {
+  max-width: 65ch;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.shopify-policy .shopify-policy-title {
+  min-width: 0;
+}
+
+.shopify-policy h1 {
+  text-align: center;
+  font-size: 48px;
+  overflow-wrap: break-word;
+  margin-bottom: 12px;
+}
+
+.shopify-policy h2 {
+  font-size: 36px;
+  margin: 40px 0 9px;
+}
+
+.shopify-policy p {
+  margin: 14px 0;
+}
+
+.shopify-policy .shopify-policy-body > p:first-child {
+  margin-top: 0;
+}
+
+.shopify-policy .shopify-policy-body > p:last-child {
+  margin-bottom: 0;
+}
+
+.shopify-policy ul, .shopify-policy ol {
+  margin: 0 0 14px;
+  padding-left: 21px;
+}
+
+.shopify-policy a {
+  text-decoration: underline;
+}
+
+@media (min-width: 750px) {
+  .shopify-policy h1 {
+  font-size: 56px;
+  margin-bottom: 14px;
+}
+}
+
+@media (min-width: 750px) {
+  .shopify-policy h2 {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+}

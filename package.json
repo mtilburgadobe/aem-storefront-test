@@ -8,6 +8,8 @@
     "lint:css": "stylelint \"blocks/**/*.css\" \"styles/*.css\"",
     "lint": "npm run lint:js && npm run lint:css",
     "lint:fix": "npm run lint:js -- --fix && npm run lint:css -- --fix",
+    "test:shopify": "node --experimental-default-type=module --test test/shopify-api.test.mjs",
+    "test:shopify:ui": "node --test test/shopify-ui.test.mjs",
     "start": "aem up",
     "install:dropins": "node build.mjs && node postinstall.js",
     "postinstall": "npm run install:dropins",
@@ -38,6 +40,7 @@
     "husky": "9.1.7",
     "merge-json-cli": "1.0.4",
     "npm-run-all": "4.1.5",
+    "playwright": "1.64.0",
     "stylelint": "17.14.0",
     "stylelint-config-standard": "40.0.0"
   },

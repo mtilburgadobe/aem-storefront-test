@@ -29,6 +29,13 @@ module.exports = {
   },
   overrides: [
     {
+      files: ['test/shopify*.test.mjs'],
+      env: { node: true, es2021: true },
+      rules: {
+        'import/no-extraneous-dependencies': ['error', { devDependencies: ['test/**/*.mjs'] }],
+      },
+    },
+    {
       files: ['build.mjs'],
       rules: {
         'import/no-extraneous-dependencies': 'off',

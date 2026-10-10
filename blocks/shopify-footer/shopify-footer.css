@@ -1,0 +1,110 @@
+.shopify-footer {
+  padding: 21px var(--shopify-margin) 33.6px;
+}
+
+.shopify-footer .shopify-newsletter {
+  display: grid;
+  gap: 20px;
+  padding-bottom: 21px;
+}
+
+.shopify-footer h2 {
+  font-size: 24px;
+  margin-bottom: 6px;
+}
+
+.shopify-footer .shopify-newsletter form {
+  position: relative;
+}
+
+.shopify-footer .shopify-newsletter input[type="email"] {
+  width: 100%;
+  height: 60px;
+  border: 1px solid rgb(221 221 221);
+  border-radius: 100px;
+  background: rgb(255 255 255);
+  padding: 16px 56px 16px 28px;
+  font-size: 16px;
+}
+
+.shopify-footer .shopify-newsletter button {
+  background: none;
+  border: 0;
+  position: absolute;
+  right: 14px;
+  top: 10px;
+  height: 40px;
+  width: 40px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.shopify-footer .shopify-newsletter button svg {
+  width: 24px;
+  height: 24px;
+}
+
+.shopify-footer .shopify-utilities {
+  border-top: 1px solid rgb(221 221 221);
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  color: rgb(102 102 102);
+  font-size: 12px;
+}
+
+.shopify-footer .shopify-utilities button {
+  border: 0;
+  background: transparent;
+  font-size: 12px;
+  padding: 0;
+  line-height: 15px;
+}
+
+.shopify-footer .shopify-utilities::after {
+  content: "";
+}
+
+@media (min-width: 750px) {
+  .shopify-footer {
+  padding-top: 30px;
+  padding-bottom: 48px;
+}
+}
+
+@media (min-width: 750px) {
+  .shopify-footer .shopify-newsletter input[type="email"] {
+  font-size: 14px;
+}
+}
+
+@media (min-width: 750px) {
+  .shopify-footer .shopify-newsletter {
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding-bottom: 30px;
+  align-items: start;
+}
+}
+
+@media (min-width: 750px) {
+  .shopify-footer .shopify-utilities {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  padding-top: 20px;
+}
+}
+
+@media (min-width: 750px) {
+  .shopify-footer .shopify-utilities > p {
+  text-align: left;
+}
+}
+
+@media (min-width: 750px) {
+  .shopify-footer .shopify-utilities button {
+  text-align: center;
+}
+}
