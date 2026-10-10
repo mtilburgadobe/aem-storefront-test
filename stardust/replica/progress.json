@@ -3,7 +3,7 @@
   "mode": "preserve",
   "source": "https://t8bnc1-5b.myshopify.com",
   "authoring": "https://da.live/#/mtilburgadobe/aem-storefront-test",
-  "authoringStage": "drafts-only",
+  "authoringStage": "previewed-for-runtime-development",
   "publishedOriginGate": "not-run",
   "pages": [
     {
@@ -418,7 +418,7 @@
     "Product siblings still need measured template-variance and import-content gates.",
     "Full structural, visual and interaction approvals remain pending.",
     "Contact/newsletter acceptance from an AEM origin is not verified.",
-    "Authoring drafts are staged; block decorators and the metadata-gated AEM runtime are not implemented.",
-    "No pages are previewed, published or approved; no migrated state transitions are recorded."
+    "Authorable block decorators and metadata-gated Shopify startup are implemented; branch deployment verification is pending.",
+    "Twelve DA documents are previewed for development. No pages are published or replica-approved; no migrated state transitions are recorded."
   ]
 }
