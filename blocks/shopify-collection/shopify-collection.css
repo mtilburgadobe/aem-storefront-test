@@ -1,0 +1,153 @@
+.shopify-collection {
+  padding: 33.6px var(--shopify-margin) 33.6px;
+}
+
+.shopify-collection h1 {
+  font-size: 36px;
+  margin-bottom: 36px;
+}
+
+.shopify-collection .shopify-filters {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  height: 44px;
+  margin-bottom: 16px;
+}
+
+.shopify-collection .shopify-filter-fields, .shopify-collection .shopify-result-count, .shopify-collection .shopify-sort {
+  display: none;
+}
+
+.shopify-collection .shopify-mobile-filter {
+  border: 0;
+  background: none;
+  padding: 0;
+  margin-right: auto;
+}
+
+.shopify-collection .shopify-layout-toggle {
+  border: 0;
+  background: rgb(243 243 243);
+  border-radius: 4px;
+  font-size: 20px;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+}
+
+.shopify-collection .collection-grid {
+  margin-inline: -8px;
+  gap: 12px;
+}
+
+.shopify-collection .collection-grid[data-layout="compact"] {
+  gap: 24px 16px;
+}
+
+.shopify-collection .collection-grid[data-layout="compact"] .shopify-card-title {
+  font-size: 13px;
+  line-height: 16.9px;
+}
+
+.shopify-collection .collection-grid[data-layout="compact"] .shopify-card-price, .shopify-collection .collection-grid[data-layout="compact"] .shopify-badge {
+  display: none;
+}
+
+.shopify-collection details {
+  position: relative;
+}
+
+.shopify-collection summary {
+  display: flex;
+  list-style: none;
+  cursor: pointer;
+  gap: 8px;
+  align-items: center;
+}
+
+.shopify-collection fieldset {
+  position: absolute;
+  z-index: 5;
+  top: 24px;
+  left: 0;
+  background: rgb(255 255 255);
+  border: 1px solid rgb(221 221 221);
+  padding: 16px;
+  min-width: 230px;
+}
+
+.shopify-collection fieldset label {
+  display: block;
+  white-space: nowrap;
+}
+
+.shopify-collection fieldset input[type="number"] {
+  width: 90px;
+}
+
+@media (min-width: 750px) {
+  .shopify-collection {
+  padding-block: 48px;
+}
+}
+
+@media (min-width: 750px) {
+  .shopify-collection h1 {
+  font-size: 48px;
+  margin-bottom: 60px;
+}
+}
+
+@media (min-width: 750px) {
+  .shopify-collection .shopify-filters {
+  margin-bottom: 16px;
+}
+}
+
+@media (min-width: 750px) {
+  .shopify-collection .shopify-mobile-filter {
+  display: none;
+}
+}
+
+@media (min-width: 750px) {
+  .shopify-collection .shopify-filter-fields {
+  display: flex;
+  gap: 20px;
+  margin-right: auto;
+}
+}
+
+@media (min-width: 750px) {
+  .shopify-collection .shopify-result-count {
+  display: block;
+}
+}
+
+@media (min-width: 750px) {
+  .shopify-collection .shopify-sort {
+  display: flex;
+  position: relative;
+  align-items: center;
+  gap: 8px;
+}
+}
+
+@media (min-width: 750px) {
+  .shopify-collection .shopify-sort select {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+  width: 100%;
+}
+}
+
+@media (min-width: 750px) {
+  .shopify-collection .collection-grid {
+  margin-inline: 0;
+  gap: 40px;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+}

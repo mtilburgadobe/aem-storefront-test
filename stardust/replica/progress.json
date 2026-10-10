@@ -1,0 +1,424 @@
+{
+  "recordedAt": "2026-10-10T12:54:23.537Z",
+  "mode": "preserve",
+  "source": "https://t8bnc1-5b.myshopify.com",
+  "authoring": "https://da.live/#/mtilburgadobe/aem-storefront-test",
+  "authoringStage": "drafts-only",
+  "publishedOriginGate": "not-run",
+  "pages": [
+    {
+      "slug": "index",
+      "type": "landing",
+      "archetype": "stardust/prototypes/index-proposed.html",
+      "approval": "not-approved",
+      "status": "static-measurements-and-interactions-in-progress",
+      "breakpoints": {
+        "360": {
+          "iterationsUsed": 2,
+          "pixelDifferencePercent": 1.72,
+          "heightDeltaPx": 0,
+          "pixelAndHeightThresholdsMet": true,
+          "standardPixelGateSupported": true,
+          "regime": "standard-mobile",
+          "limitation": null,
+          "evidence": "stardust/replica/gates/index-360",
+          "structural": "pending-complete-probe-review",
+          "visual": "pending-complete-probe-review",
+          "interaction": "pending-full-parity",
+          "allGatesPassed": false
+        },
+        "1440": {
+          "iterationsUsed": 2,
+          "pixelDifferencePercent": 1.23,
+          "heightDeltaPx": -3,
+          "pixelAndHeightThresholdsMet": true,
+          "standardPixelGateSupported": false,
+          "regime": "supplementary-inner-scroller",
+          "limitation": "The source scrolls .page-wrapper instead of window; the unchanged standard stitch instrument cannot capture its full desktop page. Supplementary symmetric inner-scroller measurements are not a standard gate pass.",
+          "evidence": "stardust/replica/gates/index-1440",
+          "structural": "pending-complete-probe-review",
+          "visual": "pending-complete-probe-review",
+          "interaction": "pending-full-parity",
+          "allGatesPassed": false
+        }
+      },
+      "motion": {
+        "observed": "Source homepage motion and search/cart/menu/region observations recorded.",
+        "implemented": [
+          "predictive-search",
+          "search-reset",
+          "dialog-dismissal",
+          "empty-cart-drawer",
+          "mobile-menu-content"
+        ],
+        "pending": [
+          "source-transitions",
+          "region-selection",
+          "account-controls",
+          "cookie-preferences",
+          "image-dialog",
+          "policy-popover",
+          "filter-and-sort-parity"
+        ],
+        "dead": [],
+        "evidence": "stardust/replica/motion"
+      }
+    },
+    {
+      "slug": "collections-all",
+      "type": "listing",
+      "archetype": "stardust/prototypes/collections-all-proposed.html",
+      "approval": "not-approved",
+      "status": "static-measurements-and-interactions-in-progress",
+      "breakpoints": {
+        "360": {
+          "iterationsUsed": 2,
+          "pixelDifferencePercent": 8.24,
+          "heightDeltaPx": 8,
+          "pixelAndHeightThresholdsMet": true,
+          "standardPixelGateSupported": true,
+          "regime": "standard-mobile",
+          "limitation": null,
+          "evidence": "stardust/replica/gates/collections-all-360",
+          "structural": "pending-complete-probe-review",
+          "visual": "pending-complete-probe-review",
+          "interaction": "pending-full-parity",
+          "allGatesPassed": false
+        },
+        "1440": {
+          "iterationsUsed": 2,
+          "pixelDifferencePercent": 5.36,
+          "heightDeltaPx": 5,
+          "pixelAndHeightThresholdsMet": true,
+          "standardPixelGateSupported": false,
+          "regime": "supplementary-inner-scroller",
+          "limitation": "The source scrolls .page-wrapper instead of window; the unchanged standard stitch instrument cannot capture its full desktop page. Supplementary symmetric inner-scroller measurements are not a standard gate pass.",
+          "evidence": "stardust/replica/gates/collections-all-1440",
+          "structural": "pending-complete-probe-review",
+          "visual": "pending-complete-probe-review",
+          "interaction": "pending-full-parity",
+          "allGatesPassed": false
+        }
+      },
+      "motion": {
+        "observed": "Source homepage motion and search/cart/menu/region observations recorded.",
+        "implemented": [
+          "predictive-search",
+          "search-reset",
+          "dialog-dismissal",
+          "empty-cart-drawer",
+          "mobile-menu-content"
+        ],
+        "pending": [
+          "source-transitions",
+          "region-selection",
+          "account-controls",
+          "cookie-preferences",
+          "image-dialog",
+          "policy-popover",
+          "filter-and-sort-parity"
+        ],
+        "dead": [],
+        "evidence": "stardust/replica/motion"
+      }
+    },
+    {
+      "slug": "products-road-bike-helmet",
+      "type": "program",
+      "archetype": "stardust/prototypes/products-road-bike-helmet-proposed.html",
+      "approval": "not-approved",
+      "status": "static-measurements-and-interactions-in-progress",
+      "breakpoints": {
+        "360": {
+          "iterationsUsed": 2,
+          "pixelDifferencePercent": 1.09,
+          "heightDeltaPx": 0,
+          "pixelAndHeightThresholdsMet": true,
+          "standardPixelGateSupported": true,
+          "regime": "standard-mobile",
+          "limitation": null,
+          "evidence": "stardust/replica/gates/products-road-bike-helmet-360",
+          "structural": "pending-complete-probe-review",
+          "visual": "pending-complete-probe-review",
+          "interaction": "pending-full-parity",
+          "allGatesPassed": false
+        },
+        "1440": {
+          "iterationsUsed": 2,
+          "pixelDifferencePercent": 0.95,
+          "heightDeltaPx": 0,
+          "pixelAndHeightThresholdsMet": true,
+          "standardPixelGateSupported": false,
+          "regime": "supplementary-inner-scroller",
+          "limitation": "The source scrolls .page-wrapper instead of window; the unchanged standard stitch instrument cannot capture its full desktop page. Supplementary symmetric inner-scroller measurements are not a standard gate pass.",
+          "evidence": "stardust/replica/gates/products-road-bike-helmet-1440",
+          "structural": "pending-complete-probe-review",
+          "visual": "pending-complete-probe-review",
+          "interaction": "pending-full-parity",
+          "allGatesPassed": false
+        }
+      },
+      "motion": {
+        "observed": "Source homepage motion and search/cart/menu/region observations recorded.",
+        "implemented": [
+          "predictive-search",
+          "search-reset",
+          "dialog-dismissal",
+          "empty-cart-drawer",
+          "mobile-menu-content"
+        ],
+        "pending": [
+          "source-transitions",
+          "region-selection",
+          "account-controls",
+          "cookie-preferences",
+          "image-dialog",
+          "policy-popover",
+          "filter-and-sort-parity"
+        ],
+        "dead": [],
+        "evidence": "stardust/replica/motion"
+      }
+    },
+    {
+      "slug": "pages-contact",
+      "type": "form",
+      "archetype": "stardust/prototypes/pages-contact-proposed.html",
+      "approval": "not-approved",
+      "status": "static-measurements-and-interactions-in-progress",
+      "breakpoints": {
+        "360": {
+          "iterationsUsed": 2,
+          "pixelDifferencePercent": 0.49,
+          "heightDeltaPx": 0,
+          "pixelAndHeightThresholdsMet": true,
+          "standardPixelGateSupported": true,
+          "regime": "standard-mobile",
+          "limitation": null,
+          "evidence": "stardust/replica/gates/pages-contact-360",
+          "structural": "pending-complete-probe-review",
+          "visual": "pending-complete-probe-review",
+          "interaction": "pending-full-parity",
+          "allGatesPassed": false
+        },
+        "1440": {
+          "iterationsUsed": 2,
+          "pixelDifferencePercent": 0.19,
+          "heightDeltaPx": 0,
+          "pixelAndHeightThresholdsMet": true,
+          "standardPixelGateSupported": false,
+          "regime": "supplementary-inner-scroller",
+          "limitation": "The source scrolls .page-wrapper instead of window; the unchanged standard stitch instrument cannot capture its full desktop page. Supplementary symmetric inner-scroller measurements are not a standard gate pass.",
+          "evidence": "stardust/replica/gates/pages-contact-1440",
+          "structural": "pending-complete-probe-review",
+          "visual": "pending-complete-probe-review",
+          "interaction": "pending-full-parity",
+          "allGatesPassed": false
+        }
+      },
+      "motion": {
+        "observed": "Source homepage motion and search/cart/menu/region observations recorded.",
+        "implemented": [
+          "predictive-search",
+          "search-reset",
+          "dialog-dismissal",
+          "empty-cart-drawer",
+          "mobile-menu-content"
+        ],
+        "pending": [
+          "source-transitions",
+          "region-selection",
+          "account-controls",
+          "cookie-preferences",
+          "image-dialog",
+          "policy-popover",
+          "filter-and-sort-parity"
+        ],
+        "dead": [],
+        "evidence": "stardust/replica/motion"
+      }
+    },
+    {
+      "slug": "cart",
+      "type": "unique",
+      "archetype": "stardust/prototypes/cart-proposed.html",
+      "approval": "not-approved",
+      "status": "static-measurements-and-interactions-in-progress",
+      "breakpoints": {
+        "360": {
+          "iterationsUsed": 2,
+          "pixelDifferencePercent": 0.82,
+          "heightDeltaPx": 0,
+          "pixelAndHeightThresholdsMet": true,
+          "standardPixelGateSupported": true,
+          "regime": "standard-mobile",
+          "limitation": null,
+          "evidence": "stardust/replica/gates/cart-360",
+          "structural": "pending-complete-probe-review",
+          "visual": "pending-complete-probe-review",
+          "interaction": "pending-full-parity",
+          "allGatesPassed": false
+        },
+        "1440": {
+          "iterationsUsed": 2,
+          "pixelDifferencePercent": 0.31,
+          "heightDeltaPx": 0,
+          "pixelAndHeightThresholdsMet": true,
+          "standardPixelGateSupported": false,
+          "regime": "supplementary-inner-scroller",
+          "limitation": "The source scrolls .page-wrapper instead of window; the unchanged standard stitch instrument cannot capture its full desktop page. Supplementary symmetric inner-scroller measurements are not a standard gate pass.",
+          "evidence": "stardust/replica/gates/cart-1440",
+          "structural": "pending-complete-probe-review",
+          "visual": "pending-complete-probe-review",
+          "interaction": "pending-full-parity",
+          "allGatesPassed": false
+        }
+      },
+      "motion": {
+        "observed": "Source homepage motion and search/cart/menu/region observations recorded.",
+        "implemented": [
+          "predictive-search",
+          "search-reset",
+          "dialog-dismissal",
+          "empty-cart-drawer",
+          "mobile-menu-content"
+        ],
+        "pending": [
+          "source-transitions",
+          "region-selection",
+          "account-controls",
+          "cookie-preferences",
+          "image-dialog",
+          "policy-popover",
+          "filter-and-sort-parity"
+        ],
+        "dead": [],
+        "evidence": "stardust/replica/motion"
+      }
+    },
+    {
+      "slug": "policies-privacy-policy",
+      "type": "static",
+      "archetype": "stardust/prototypes/policies-privacy-policy-proposed.html",
+      "approval": "not-approved",
+      "status": "static-measurements-and-interactions-in-progress",
+      "breakpoints": {
+        "360": {
+          "iterationsUsed": 2,
+          "pixelDifferencePercent": 1.46,
+          "heightDeltaPx": 0,
+          "pixelAndHeightThresholdsMet": true,
+          "standardPixelGateSupported": true,
+          "regime": "standard-mobile",
+          "limitation": null,
+          "evidence": "stardust/replica/gates/policies-privacy-policy-360",
+          "structural": "pending-complete-probe-review",
+          "visual": "pending-complete-probe-review",
+          "interaction": "pending-full-parity",
+          "allGatesPassed": false
+        },
+        "1440": {
+          "iterationsUsed": 2,
+          "pixelDifferencePercent": 0.56,
+          "heightDeltaPx": 0,
+          "pixelAndHeightThresholdsMet": true,
+          "standardPixelGateSupported": false,
+          "regime": "supplementary-inner-scroller",
+          "limitation": "The source scrolls .page-wrapper instead of window; the unchanged standard stitch instrument cannot capture its full desktop page. Supplementary symmetric inner-scroller measurements are not a standard gate pass.",
+          "evidence": "stardust/replica/gates/policies-privacy-policy-1440",
+          "structural": "pending-complete-probe-review",
+          "visual": "pending-complete-probe-review",
+          "interaction": "pending-full-parity",
+          "allGatesPassed": false
+        }
+      },
+      "motion": {
+        "observed": "Source homepage motion and search/cart/menu/region observations recorded.",
+        "implemented": [
+          "predictive-search",
+          "search-reset",
+          "dialog-dismissal",
+          "empty-cart-drawer",
+          "mobile-menu-content"
+        ],
+        "pending": [
+          "source-transitions",
+          "region-selection",
+          "account-controls",
+          "cookie-preferences",
+          "image-dialog",
+          "policy-popover",
+          "filter-and-sort-parity"
+        ],
+        "dead": [],
+        "evidence": "stardust/replica/motion"
+      }
+    },
+    {
+      "slug": "search",
+      "type": "search",
+      "archetype": "stardust/prototypes/search-proposed.html",
+      "approval": "not-approved",
+      "status": "static-measurements-and-interactions-in-progress",
+      "breakpoints": {
+        "360": {
+          "iterationsUsed": 0,
+          "pixelDifferencePercent": null,
+          "heightDeltaPx": null,
+          "pixelAndHeightThresholdsMet": false,
+          "standardPixelGateSupported": true,
+          "regime": "standard-mobile",
+          "limitation": null,
+          "evidence": "stardust/replica/gates/search-360",
+          "structural": "pending-complete-probe-review",
+          "visual": "pending-complete-probe-review",
+          "interaction": "pending-full-parity",
+          "allGatesPassed": false
+        },
+        "1440": {
+          "iterationsUsed": 0,
+          "pixelDifferencePercent": null,
+          "heightDeltaPx": null,
+          "pixelAndHeightThresholdsMet": false,
+          "standardPixelGateSupported": false,
+          "regime": "supplementary-inner-scroller",
+          "limitation": "The source scrolls .page-wrapper instead of window; the unchanged standard stitch instrument cannot capture its full desktop page. Supplementary symmetric inner-scroller measurements are not a standard gate pass.",
+          "evidence": "stardust/replica/gates/search-1440",
+          "structural": "pending-complete-probe-review",
+          "visual": "pending-complete-probe-review",
+          "interaction": "pending-full-parity",
+          "allGatesPassed": false
+        }
+      },
+      "motion": {
+        "observed": "Source homepage motion and search/cart/menu/region observations recorded.",
+        "implemented": [
+          "predictive-search",
+          "search-reset",
+          "dialog-dismissal",
+          "empty-cart-drawer",
+          "mobile-menu-content"
+        ],
+        "pending": [
+          "source-transitions",
+          "region-selection",
+          "account-controls",
+          "cookie-preferences",
+          "image-dialog",
+          "policy-popover",
+          "filter-and-sort-parity"
+        ],
+        "dead": [],
+        "evidence": "stardust/replica/motion"
+      }
+    }
+  ],
+  "residuals": [
+    "Search page has no completed responsive static gate.",
+    "Product siblings still need measured template-variance and import-content gates.",
+    "Full structural, visual and interaction approvals remain pending.",
+    "Contact/newsletter acceptance from an AEM origin is not verified.",
+    "Authoring drafts are staged; block decorators and the metadata-gated AEM runtime are not implemented.",
+    "No pages are previewed, published or approved; no migrated state transitions are recorded."
+  ]
+}

@@ -1,0 +1,64 @@
+.shopify-hero {
+  position: relative;
+  height: 297px;
+  padding: 70px 0 50.4px;
+  overflow: hidden;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+.shopify-hero > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right center;
+  filter: brightness(0.6);
+}
+
+.shopify-hero > div {
+  position: relative;
+  text-align: center;
+  color: rgb(255 255 255);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.shopify-hero p {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1;
+  max-width: 100%;
+}
+
+.shopify-hero a {
+  border: 1px solid rgb(255 255 255);
+  border-radius: 14px;
+  padding: 16px 24px;
+  display: inline-flex;
+  min-height: 54px;
+  align-items: center;
+}
+
+.shopify-hero a:hover {
+  background: rgb(0 0 0 / 15%);
+}
+
+@media (min-width: 750px) {
+  .shopify-hero {
+  height: 474px;
+  padding: 100px 0 72px;
+  align-items: end;
+}
+}
+
+@media (min-width: 750px) {
+  .shopify-hero p {
+  font-size: 48px;
+}
+}

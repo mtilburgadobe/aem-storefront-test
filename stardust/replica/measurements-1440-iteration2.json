@@ -1,0 +1,67 @@
+[
+  {
+    "slug": "collections-all",
+    "width": 1440,
+    "iteration": 2,
+    "difference": 5.36,
+    "heightDelta": 5,
+    "pixelThresholdMet": true,
+    "heightThresholdMet": true,
+    "standardPixelGateSupported": false,
+    "structuralAndInteractionGates": "pending",
+    "approval": "not-approved",
+    "evidence": "stardust/replica/gates/collections-all-1440"
+  },
+  {
+    "slug": "products-road-bike-helmet",
+    "width": 1440,
+    "iteration": 2,
+    "difference": 0.95,
+    "heightDelta": 0,
+    "pixelThresholdMet": true,
+    "heightThresholdMet": true,
+    "standardPixelGateSupported": false,
+    "structuralAndInteractionGates": "pending",
+    "approval": "not-approved",
+    "evidence": "stardust/replica/gates/products-road-bike-helmet-1440"
+  },
+  {
+    "slug": "pages-contact",
+    "width": 1440,
+    "iteration": 2,
+    "difference": 0.19,
+    "heightDelta": 0,
+    "pixelThresholdMet": true,
+    "heightThresholdMet": true,
+    "standardPixelGateSupported": false,
+    "structuralAndInteractionGates": "pending",
+    "approval": "not-approved",
+    "evidence": "stardust/replica/gates/pages-contact-1440"
+  },
+  {
+    "slug": "cart",
+    "width": 1440,
+    "iteration": 2,
+    "difference": 0.31,
+    "heightDelta": 0,
+    "pixelThresholdMet": true,
+    "heightThresholdMet": true,
+    "standardPixelGateSupported": false,
+    "structuralAndInteractionGates": "pending",
+    "approval": "not-approved",
+    "evidence": "stardust/replica/gates/cart-1440"
+  },
+  {
+    "slug": "policies-privacy-policy",
+    "width": 1440,
+    "iteration": 2,
+    "difference": 0.56,
+    "heightDelta": 0,
+    "pixelThresholdMet": true,
+    "heightThresholdMet": true,
+    "standardPixelGateSupported": false,
+    "structuralAndInteractionGates": "pending",
+    "approval": "not-approved",
+    "evidence": "stardust/replica/gates/policies-privacy-policy-1440"
+  }
+]

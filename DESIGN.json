@@ -1,0 +1,28 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica",
+    "mode": "bounded-single",
+    "synthesizedFrom": [
+      "stardust/current/lifts/index-1440.json",
+      "stardust/current/lifts/index-360.json"
+    ]
+  },
+  "mode": "preserve",
+  "colors": { "foreground": "#000000", "background": "#ffffff" },
+  "typography": {
+    "family": "Inter",
+    "body": { "size": 14, "lineHeight": 1.6 },
+    "shelfHeading": 24,
+    "catalogHeading": { "desktop": 48, "mobile": 36 },
+    "productTitle": { "size": 32, "lineHeight": 1.1 }
+  },
+  "layout": {
+    "breakpoint": 750,
+    "horizontalMargin": { "desktop": 40, "mobile": 16 },
+    "announcementHeight": 43,
+    "headerHeight": { "desktop": 68.375, "mobile": 60 },
+    "heroHeight": { "desktop": 474, "mobile": 297 }
+  },
+  "controls": { "primaryRadius": 14 },
+  "inconsistencyRegister": "stardust/replica/inconsistency-register.md"
+}

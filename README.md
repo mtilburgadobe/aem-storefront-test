@@ -2,6 +2,37 @@
 
 This project boilerplate is for Edge Delivery Services projects that integrate with Adobe Commerce.
 
+## Shopify replica in progress
+
+The source storefront is <https://t8bnc1-5b.myshopify.com/>. Its captured
+content is staged as editable drafts in
+[Document Authoring](https://da.live/#/mtilburgadobe/aem-storefront-test).
+The existing AEM Configuration Service points to this content source.
+These drafts are not previewed or published: replica interaction gates,
+authorable block decorators and a Shopify-specific page bootstrap remain
+in progress. The existing Adobe Commerce runtime has not been changed.
+
+`scripts/shopify-config.js` contains only public Storefront API settings.
+Never add Shopify app secrets, Admin API credentials, Adobe IMS tokens or
+the source storefront password to served code. Shopify catalog, predictive
+search and cart requests use `scripts/shopify-api.js`; checkout and account
+flows remain hosted by Shopify. Contact and newsletter forms currently
+hand off to Shopify, but off-origin submission acceptance is not yet verified.
+
+The clean standalone replicas can be served locally with
+`node stardust/scripts/serve-replica.mjs` on port 8793. The browser checks
+require that server and Playwright with Chrome:
+
+```bash
+node --experimental-default-type=module --test test/shopify-api.test.mjs
+node --test test/shopify-ui.test.mjs
+```
+
+`stardust/replica/progress.json` records measurements and their limitations;
+desktop supplementary inner-scroller measurements are not a standard
+Replica gate approval. No content or code should be published until the
+required replica and published-origin gates are completed.
+
 ## Documentation
 
 Before using the boilerplate, we recommend you to go through the documentation on <https://experienceleague.adobe.com/developer/commerce/storefront/> and more specifically:
