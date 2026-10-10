@@ -38,7 +38,7 @@
   padding: 0;
 }
 
-.shopify-header .shopify-icon svg {
+.shopify-header .shopify-icon svg, .shopify-header .shopify-icon img {
   width: 20px;
   height: 20px;
 }
@@ -47,7 +47,7 @@
   grid-area: 1 / 1;
 }
 
-.shopify-header .shopify-menu-toggle svg {
+.shopify-header .shopify-menu-toggle svg, .shopify-header .shopify-menu-toggle img {
   width: 14px;
   height: 14px;
 }

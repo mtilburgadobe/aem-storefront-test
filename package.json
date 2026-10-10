@@ -10,6 +10,7 @@
     "lint:fix": "npm run lint:js -- --fix && npm run lint:css -- --fix",
     "test:shopify": "node --experimental-default-type=module --test test/shopify-api.test.mjs",
     "test:shopify:ui": "node --test test/shopify-ui.test.mjs",
+    "test:shopify:page": "node --test test/shopify-page.test.mjs",
     "start": "aem up",
     "install:dropins": "node build.mjs && node postinstall.js",
     "postinstall": "npm run install:dropins",

@@ -8,9 +8,15 @@ The source storefront is <https://t8bnc1-5b.myshopify.com/>. Its captured
 content is staged as editable drafts in
 [Document Authoring](https://da.live/#/mtilburgadobe/aem-storefront-test).
 The existing AEM Configuration Service points to this content source.
-These drafts are not previewed or published: replica interaction gates,
-authorable block decorators and a Shopify-specific page bootstrap remain
-in progress. The existing Adobe Commerce runtime has not been changed.
+The content is now previewed for development, not published to `aem.live`.
+Replica interaction and published-origin fidelity approvals remain in progress.
+
+`commerce-provider: shopify` page metadata selects `scripts/shopify-page.js`
+through `scripts/storefront.js`, without loading Adobe Commerce configuration,
+drop-ins or initializers. Pages without this metadata still use the original
+Adobe Commerce startup. Shopify blocks retain authored semantic nodes while
+decorating the content; their authoring models are documented in each block.
+The shared fragments use `nav` and `footer` metadata.
 
 `scripts/shopify-config.js` contains only public Storefront API settings.
 Never add Shopify app secrets, Admin API credentials, Adobe IMS tokens or
@@ -26,12 +32,20 @@ require that server and Playwright with Chrome:
 ```bash
 node --experimental-default-type=module --test test/shopify-api.test.mjs
 node --test test/shopify-ui.test.mjs
+npm run test:shopify:page
 ```
 
 `stardust/replica/progress.json` records measurements and their limitations;
 desktop supplementary inner-scroller measurements are not a standard
 Replica gate approval. No content or code should be published until the
 required replica and published-origin gates are completed.
+
+The AEM page checks require a local AEM server at `http://localhost:3000`
+or `SHOPIFY_TEST_ORIGIN` set to a branch preview. Local checks use the real
+previewed AEM HTML with local code, including normalized text cells and pictures.
+These startup checks prove routing and backend hydration, not full replica
+fidelity. After code is merged, preview the DA documents separately; code
+sync alone does not preview content.
 
 ## Documentation
 

@@ -53,6 +53,7 @@ function productCard(product) {
 
 let products = [];
 let activeDialog;
+const collectionCards = new WeakMap();
 
 function closeDialog() {
   if (activeDialog?.open) activeDialog.close();
@@ -105,7 +106,15 @@ function filterProducts(collection, controls = collection) {
   else list.sort((a, b) => a.title.localeCompare(b.title));
   if (sort?.endsWith('desc')) list = list.reverse();
   const grid = collection.querySelector('.shopify-grid');
-  grid.replaceChildren(...list.map(productCard));
+  if (!collectionCards.has(collection)) {
+    collectionCards.set(collection, new Map([...grid.querySelectorAll('.shopify-card')]
+      .map((card) => [card.dataset.handle, card])));
+  }
+  const cards = collectionCards.get(collection);
+  grid.replaceChildren(...list.map((product) => {
+    if (!cards.has(product.handle)) cards.set(product.handle, productCard(product));
+    return cards.get(product.handle);
+  }));
   if (!list.length) grid.append(element('p', {}, 'Keine Produkte gefunden.'));
   collection.querySelector('.shopify-result-count').textContent = `${list.length} Artikel`;
 }
@@ -312,6 +321,7 @@ function showConsent(force = false) {
 }
 
 async function hydrateProduct(section) {
+  if (section.dataset.shopifyHydrated) return;
   const product = await getProduct(section.dataset.handle);
   const form = section.querySelector('.shopify-buy');
   const button = form.querySelector('.shopify-add');
@@ -348,9 +358,10 @@ async function hydrateProduct(section) {
       update();
     }
   });
+  section.dataset.shopifyHydrated = 'true';
 }
 
-export default async function initializeShopifyUI() {
+function attachListeners() {
   if (document.body.dataset.shopifyInitialized) return;
   document.body.dataset.shopifyInitialized = 'true';
   document.addEventListener('click', (event) => {
@@ -380,6 +391,11 @@ export default async function initializeShopifyUI() {
       badge.parentElement.setAttribute('aria-label', `Warenkorb ${count}`);
     });
   });
+}
+
+export default async function initializeShopifyUI() {
+  attachListeners();
+  document.body.dataset.shopifyReady = 'loading';
   showConsent();
   try {
     products = await getCatalog();
@@ -394,7 +410,10 @@ export default async function initializeShopifyUI() {
     });
     const collection = document.querySelector('.shopify-collection');
     if (collection) {
-      collection.addEventListener('change', () => filterProducts(collection));
+      if (!collection.dataset.shopifyHydrated) {
+        collection.addEventListener('change', () => filterProducts(collection));
+        collection.dataset.shopifyHydrated = 'true';
+      }
       filterProducts(collection);
     }
     const search = document.querySelector('.shopify-search-page');
@@ -402,7 +421,7 @@ export default async function initializeShopifyUI() {
       const query = new URLSearchParams(window.location.search).get('q') || '';
       search.querySelector('input').value = query;
       const found = query.trim() ? await searchProducts(query) : products;
-      search.querySelector('.shopify-grid').replaceChildren(...found.map(productCard));
+      if (query.trim()) search.querySelector('.shopify-grid').replaceChildren(...found.map(productCard));
       if (!found.length) search.append(element('p', {}, 'Keine Produkte gefunden.'));
     }
     await Promise.all([...document.querySelectorAll('.shopify-product')].map(hydrateProduct));
@@ -416,4 +435,4 @@ export default async function initializeShopifyUI() {
   }
 }
 
-if (document.body.classList.contains('shopify-storefront')) initializeShopifyUI();
+if (document.body.classList.contains('shopify-storefront') && !document.body.dataset.shopifyEds) initializeShopifyUI();

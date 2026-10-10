@@ -29,16 +29,40 @@ body.shopify-storefront {
   min-height: 100dvh;
 }
 
-.shopify-scroll > * {
-  flex-shrink: 0;
-}
-
 .shopify-scroll > main {
   flex: 1 0 auto;
 }
 
+.shopify-storefront main > .section,
+.shopify-storefront main > .section > div {
+  margin: 0;
+  padding: 0;
+  max-width: none;
+}
+
+.shopify-storefront .shopify-card-overlay {
+  font-size: 0;
+}
+
+.shopify-storefront .shopify-card-image picture {
+  display: block;
+}
+
+.shopify-storefront header:has(.shopify-header) {
+  display: contents;
+}
+
+.shopify-storefront .section:has(.shopify-policy) {
+  display: flex;
+}
+
 .shopify-storefront * {
   box-sizing: border-box;
+}
+
+.shopify-scroll > *,
+.shopify-scroll > header > * {
+  flex-shrink: 0;
 }
 
 .shopify-storefront [hidden] {
