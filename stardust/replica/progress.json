@@ -5,6 +5,13 @@
   "authoring": "https://da.live/#/mtilburgadobe/aem-storefront-test",
   "authoringStage": "previewed-for-runtime-development",
   "publishedOriginGate": "not-run",
+  "runtimeVerification": {
+    "status": "feature-preview-verified",
+    "origin": "https://fix-shopify-runtime--aem-storefront-test--mtilburgadobe.aem.page",
+    "responsiveWidths": [360, 900, 1440],
+    "checks": "Eight browser tests passed: Shopify startup without Adobe Commerce requests, ten authored routes, live availability, sold-out test fixture, DA body replacement, authored-node retention, collection filter restoration and non-Shopify routing.",
+    "limitation": "Runtime verification is not source-fidelity or published-origin gate approval. Main requires merging the fix branch."
+  },
   "pages": [
     {
       "slug": "index",
@@ -418,7 +425,7 @@
     "Product siblings still need measured template-variance and import-content gates.",
     "Full structural, visual and interaction approvals remain pending.",
     "Contact/newsletter acceptance from an AEM origin is not verified.",
-    "Authorable block decorators and metadata-gated Shopify startup are implemented; branch deployment verification is pending.",
+    "Authorable block decorators and metadata-gated Shopify startup are verified on the feature preview; main requires merging the fix branch.",
     "Twelve DA documents are previewed for development. No pages are published or replica-approved; no migrated state transitions are recorded."
   ]
 }
